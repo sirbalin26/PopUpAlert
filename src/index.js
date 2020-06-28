@@ -10,3 +10,13 @@ ReactDOM.render(
   </React.StrictMode>,
   rootElement
 );
+
+const PressBtn = () => {
+  let btn;
+  if (confirm("Adaugat!")) {
+    btn = "Ok";
+  } else {
+    btn = "Anuleaza";
+  }
+  document.getElementById("root").innerHTML = btn;
+};
